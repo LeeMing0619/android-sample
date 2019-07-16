@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:text="Rider Profile"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_18sdp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_user_placeholder"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:text="John Deo"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_17sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/ic_facebook" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/ic_twitter" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@drawable/ic_google_plus" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:background="@drawable/ic_mail" />
+
+        <TextView
+            android:id="@+id/user_email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="john.doe@gmail.com"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:background="@drawable/ic_phone_number" />
+
+        <TextView
+            android:id="@+id/user_phone_no_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="+8 456 6546 46"
+            android:textColor="@color/light_blue"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:gravity="top">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/ic_location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="Home"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/home_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="460 Park Ave, New York"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="Office"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/office_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="541-549 Columbus Ave, New York"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/edit_profile_btn"
+        android:fontFamily="@font/proximanova_bold"
+        android:text="Change Password"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/change_pwd_btn"/>
+
+    <Button
+        android:id="@+id/edit_profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/proximanova_bold"
+        android:text="Edit profile"
+        android:textColor="#fff"
+        android:textSize="@dimen/_14sdp" />
+
+</LinearLayout>

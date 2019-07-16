@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frg"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <FrameLayout
+        android:id="@+id/from_location_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/to_location_linear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/border_card_new"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/b_b" />
+
+
+            <TextView
+                android:id="@+id/to_location_ed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:fontFamily="@font/proximanova_regular"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/from_location_linear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/border_card"
+            android:elevation="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/a_a" />
+
+            <EditText
+                android:id="@+id/from_location_ed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/proximanova_regular"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/from_icons_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:src="@drawable/location" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:src="@drawable/voice" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/to_location_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/from_location_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/border_card_new"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/a_a" />
+
+
+            <TextView
+                android:id="@+id/from_location_ed2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:fontFamily="@font/proximanova_regular"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/to_location_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/border_card"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/b_b" />
+
+
+            <EditText
+                android:id="@+id/to_location_ed2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/proximanova_regular"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/to_location_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/_10sdp"
+                android:src="@drawable/voice" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/car_card_float">
+
+            <FrameLayout
+                android:id="@+id/card_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="invisible">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/li_stand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_7sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:id="@+id/car_card_one_li">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_car"
+                                android:id="@+id/car_one_img"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Standard"
+                                android:textColor="@color/black"
+                                android:id="@+id/car_one_txt"/>
+
+                            <View
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_2sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_15sdp"
+                                android:background="@color/green"
+                                android:id="@+id/view_card1"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:id="@+id/car_card_two_li">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_car_blur2"
+                                android:id="@+id/car_two_img"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comfort"
+                                android:textColor="@color/black"
+                                android:id="@+id/car_two_txt"/>
+
+                            <View
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_2sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_15sdp"
+                                android:background="@color/green"
+                                android:id="@+id/view_card2"
+                                android:visibility="invisible"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:id="@+id/car_card_three_li">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_car_blur2"
+                                android:id="@+id/car_three_img"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Elite"
+                                android:textColor="@color/black"
+                                android:id="@+id/car_three_txt"/>
+
+                            <View
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_2sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_15sdp"
+                                android:background="@color/green"
+                                android:visibility="invisible"
+                                android:id="@+id/view_card3"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/close_card_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close_icon"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/car_card_float"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_above="@+id/request_ride_btn"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/car_float"
+            android:src="@drawable/car_float" />
+
+        <Button
+            android:id="@+id/request_ride_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/login_btn"
+            android:fontFamily="@font/proximanova_bold"
+            android:padding="@dimen/_5sdp"
+            android:text="Request a ride"
+            android:textColor="#fff"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

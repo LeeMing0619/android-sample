@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ride_back_gradient"
+    android:orientation="vertical"
+    tools:context=".YourRideActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_back"
+            android:id="@+id/back_iv" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/your_ride"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/semibold"
+            android:paddingRight="@dimen/_20sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/ride_card_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/ride_back_gradient"
+                    android:src="@drawable/ic_driver_icon"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/driver"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mark Norman"
+                        android:fontFamily="@font/proximanova_bold"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$25.00"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="end" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.2 miles"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_gravity="end"
+                        android:textColor="@color/light_gray" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/light_gray2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:background="#F2FCFB">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_up"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/light_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7356 Swift Village"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/light_gray2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:background="#F2FCFB">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drop_off"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/light_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7356 Swift Village"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/light_gray2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:background="#F2FCFB">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notes"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/light_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My passenger was very heplful. would be happy to be his driver again."
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/dash_view"
+                android:layerType="software"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:background="#F2FCFB">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trip_fare"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ride"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$15.00"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Promo"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$5.00"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Amount"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$10.00"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F2FCFB"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <Button
+                android:id="@+id/pay_now_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="@string/pay_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/pay_later_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/border_card"
+                android:fontFamily="@font/proximanova_bold"
+                android:text="@string/pay_later"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_info"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

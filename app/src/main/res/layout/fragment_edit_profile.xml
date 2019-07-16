@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:text="Edit Profile"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_18sdp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/ic_user_placeholder"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="2dp" />
+
+                <ImageView
+                    android:id="@+id/edit_image_iv"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@drawable/ic_edit_image" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/user_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/semibold"
+                android:gravity="center"
+                android:text="John Deo"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_17sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/ic_twitter" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/ic_google_plus" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:background="@drawable/ic_profile_user" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/first_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:gravity="center_vertical"
+                        android:hint="First name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:text="John"
+                        android:textColor="@color/blue"
+                        android:textColorHint="@color/light_blue"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:background="@drawable/ic_profile_user" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/last_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Last name"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:text="Doe"
+                        android:textColor="@color/blue"
+                        android:textColorHint="@color/light_blue"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:background="@drawable/ic_mail" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/email_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:gravity="center_vertical"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:text="john.doe@gmail.com"
+                        android:textColor="@color/blue"
+                        android:textColorHint="@color/light_blue"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:background="@drawable/ic_phone_number" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/phone_no_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:gravity="center_vertical"
+                        android:hint="Phone number"
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:text="+8 456 6546 46"
+                        android:textColor="@color/blue"
+                        android:textColorHint="@color/light_blue"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:gravity="top">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/ic_location" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:text="Home"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/home_address_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:singleLine="true"
+                            android:text="460 Park Ave, New York"
+                            android:textColor="@color/light_blue"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:id="@+id/edit_home_iv"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:src="@drawable/ic_edit" />
+
+                        <ImageView
+                            android:id="@+id/close_home_iv"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_close_address" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:text="Office"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/office_address_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:maxLines="1"
+                            android:minLines="2"
+                            android:singleLine="true"
+                            android:text="541-549 Columbus Ave, New York"
+                            android:textColor="@color/light_blue"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <ImageView
+                            android:id="@+id/edit_office_iv"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:src="@drawable/ic_edit" />
+
+                        <ImageView
+                            android:id="@+id/close_office_iv"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_close_address" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/edit_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/login_btn"
+                android:fontFamily="@font/proximanova_bold"
+                android:text="Save Changes"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

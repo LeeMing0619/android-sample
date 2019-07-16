@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00cc9d</color>
+    <color name="colorPrimaryDark">#00cc9d</color>
+    <color name="colorAccent">#00cc9d</color>
+
+    <color name="green">#00cc9d</color>
+    <color name="blue">#4c5264</color>
+    <color name="light_blue">#939ab1</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white2">#E9FFFFFF</color>
+    <color name="white_overlay">#C6FFFFFF</color>
+    <color name="bg_color">#f0f3fa</color>
+    <color name="light_gray">#4B000000</color>
+    <color name="light_gray2">#0C000000</color>
+    <color name="driver_btn">#14D2B8</color>
+    <color name="green_overlay">#6A00CC9D</color>
+    <color name="blue_dark">#0061AA</color>
+    <color name="light_black">#8F000000</color>
+
+</resources>

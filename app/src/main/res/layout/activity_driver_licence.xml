@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".fragment.profile.DriverLicenceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Enter your driver's licence information"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:fontFamily="@font/proximanova_bold" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/ic_driver_icon"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/back_liear_driver_ed">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:hint="@string/driver_licence_no"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColorHint="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/back_liear_driver_ed"
+                    android:layout_marginTop="@dimen/_17sdp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:hint="@string/exp_date"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColorHint="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/back_liear_driver_ed"
+                    android:layout_marginTop="@dimen/_17sdp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:hint="@string/date_of_birth"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColorHint="@color/light_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/back_liear_driver_ed"
+                    android:layout_marginTop="@dimen/_17sdp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:hint="@string/address"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColorHint="@color/light_gray"
+                        android:shadowColor="@color/white"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="@string/take_photo"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/light_gray"
+                    android:id="@+id/take_photo_tv"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/proximanova_regular"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+
+</LinearLayout>

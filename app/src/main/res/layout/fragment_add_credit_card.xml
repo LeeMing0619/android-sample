@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".fragment.AddCreditCardFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:text="@string/add_credit_card"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_18sdp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/credit_card"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            app:backgroundTint="@color/light_gray"
+            android:hint="@string/add_credit_card"
+            android:fontFamily="@font/proximanova_regular"
+            android:padding="@dimen/_15sdp"
+            android:drawableLeft="@drawable/ic_card_no"
+            android:drawablePadding="@dimen/_10sdp"
+            android:singleLine="true"
+            android:maxLines="1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            app:backgroundTint="@color/light_gray"
+            android:hint="@string/name_on_card"
+            android:fontFamily="@font/proximanova_regular"
+            android:padding="@dimen/_15sdp"
+            android:drawableLeft="@drawable/ic_user_card"
+            android:drawablePadding="@dimen/_10sdp"
+            android:singleLine="true"
+            android:maxLines="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:padding="@dimen/_15sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expiration_card"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="@string/expiration_date"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/month"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_down"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/year"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_down"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            app:backgroundTint="@color/light_gray"
+            android:hint="@string/cv_code"
+            android:fontFamily="@font/proximanova_regular"
+            android:padding="@dimen/_15sdp"
+            android:drawableLeft="@drawable/ic_cv_code"
+            android:drawablePadding="@dimen/_10sdp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:inputType="number"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/login_btn"
+        android:fontFamily="@font/proximanova_bold"
+        android:text="@string/add_card"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+</LinearLayout>

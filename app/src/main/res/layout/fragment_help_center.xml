@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.HelpCenterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/proximanova_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/light_gray2"
+        android:elevation="@dimen/_3sdp" />
+
+    <ImageView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/ic_help_center"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Help From Flex"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/semibold"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:background="@drawable/back_liear_driver_ed">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:hint="@string/search_terms"
+            android:paddingLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/_14sdp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColorHint="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/search_back">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/proximanova_bold"
+                android:gravity="center"
+                android:text="@string/search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/back_liear_driver_ed"
+        android:id="@+id/instant_chat_li">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_question_chat"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/_10sdp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/chat_support"
+            android:paddingLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/_14sdp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/back_liear_driver_ed">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_danger"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/file_report"
+            android:paddingLeft="@dimen/_10sdp"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/_14sdp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
